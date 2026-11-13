@@ -1,0 +1,37 @@
+<header class="site-header">
+  <div class="header-inner">
+
+    <!-- Logo / site name -->
+    <a href="/" class="logo">Best Healthcare Blog</a>
+
+    <!-- Hamburger button: only shown on mobile (CSS will handle this later) -->
+    <button
+      type="button"
+      class="menu-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="site-menu">
+      <span class="menu-toggle-bar"></span>
+      <span class="menu-toggle-bar"></span>
+      <span class="menu-toggle-bar"></span>
+    </button>
+
+    <!-- Navigation: a normal row on desktop, a pop-up panel on mobile -->
+    <nav id="site-menu" class="site-menu" aria-label="Main navigation">
+
+      <!-- Close button: only shown inside the mobile pop-up -->
+      <button type="button" class="menu-close" aria-label="Close menu">&times;</button>
+
+      <ul class="menu-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Dark backdrop behind the pop-up (clicking it closes the menu) -->
+    <div class="menu-overlay"></div>
+
+  </div>
+</header>

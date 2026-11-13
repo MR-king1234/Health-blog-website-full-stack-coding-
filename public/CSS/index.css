@@ -1,0 +1,246 @@
+/* ===== Home page (all rules are scoped under .hp) ===== */
+
+.hp {
+  font-family: 'Montserrat', sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.hp *,
+.hp *::before,
+.hp *::after {
+  box-sizing: border-box;
+}
+
+.hp h1,
+.hp h2,
+.hp h3 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.hp p {
+  margin: 0 0 16px;
+}
+
+.hp img {
+  max-width: 100%;
+  display: block;
+}
+
+.hp-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hp-section {
+  padding: 70px 0;
+}
+
+/* ===== Buttons ===== */
+.hp-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hp-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hp-btn-primary {
+  background: #0f766e;
+  color: #ffffff;
+}
+
+.hp-btn-primary:hover {
+  background: #115e59;
+}
+
+.hp-btn-light {
+  background: #ffffff;
+  color: #0f766e;
+}
+
+/* ===== Hero ===== */
+.hp-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background:
+    linear-gradient(rgba(6, 60, 56, 0.75), rgba(6, 60, 56, 0.75)),
+    url('/img/group-healthcare-workers-greeting-financial-advisor-meeting-office-focus-is-young-doctor.jpg') center / cover no-repeat;
+}
+
+.hp-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  max-width: 700px;
+}
+
+.hp-hero p {
+  font-size: 1.1rem;
+  max-width: 560px;
+  opacity: 0.95;
+}
+
+.hp-hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+/* ===== About: image + text ===== */
+.hp-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hp-split img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.hp-label {
+  color: #0f766e;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hp-split h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hp-list {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.hp-list li {
+  padding: 8px 0 8px 30px;
+  position: relative;
+}
+
+.hp-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #0f766e;
+  font-weight: 700;
+}
+
+/* ===== Topics ===== */
+.hp-alt {
+  background: #f0fdfa;
+}
+
+.hp-heading {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 40px;
+}
+
+.hp-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hp-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.hp-card {
+  background: #ffffff;
+  border: 1px solid #d5eeea;
+  border-radius: 16px;
+  padding: 28px 24px;
+}
+
+.hp-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #115e59;
+}
+
+.hp-card p {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* ===== Stats ===== */
+.hp-stats {
+  background: #115e59;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.hp-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  text-align: center;
+}
+
+.hp-stat strong {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.hp-stat span {
+  opacity: 0.9;
+}
+
+/* ===== Closing call to action ===== */
+.hp-cta {
+  text-align: center;
+}
+
+.hp-cta h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hp-cta p {
+  max-width: 560px;
+  margin: 0 auto 24px;
+  color: #6b7280;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 767px) {
+  .hp-section {
+    padding: 50px 0;
+  }
+
+  .hp-hero {
+    min-height: 70vh;
+  }
+
+  .hp-split {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hp-split img {
+    height: 280px;
+  }
+}
